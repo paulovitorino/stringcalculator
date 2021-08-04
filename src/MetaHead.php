@@ -24,6 +24,7 @@ rel="stylesheet">
 <meta name="msapplication-TileImage" content="./src/favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
-<script src="./src/js/functions.js" type="text/javascript"></script>
+<script src="./src/js/basicFunctions.js?v=<?=filemtime('./src/js/basicFunctions.js');?>" type="text/javascript"></script>
+<script src="./src/js/Add.js?v=<?=filemtime('./src/js/Add.js');?>" type="text/javascript"></script>
 
 <title>String Calculator</title>

@@ -1,3 +1,12 @@
+function checkForNegatives(array) {
+    let negativeList = array.filter(function (value, index, arrayToBeFiltered) {
+        return value < 0;
+    });
+    if (negativeList.length > 0) {
+        throw 'Negatives not allowed: ' + negativeList;
+    }
+}
+
 function sumArray(array) {
     let sum = array.reduce((a, b) => a + b, 0);
     return sum;
@@ -7,12 +16,7 @@ function sumString(stringValue, delimiter) {
     const array = stringValue.split(delimiter);
     //As parseInt expects 2 arguments (string, radix) to convert to a number, I had to set radix = 10
     let intArray = array.map(element => parseInt(element, 10));
-    let negativeList = intArray.filter(function (value, index, arrayToBeFiltered) {
-        return value < 0;
-    });
-    if (negativeList.length > 0) {
-        throw 'Negatives not allowed';
-    }
+    checkForNegatives(intArray);
     return sumArray(intArray);
 }
 
@@ -29,9 +33,4 @@ function Add(inputValue) {
         inputValue = brokenArray.join('');
         return sumString(inputValue, delimiter);
     }
-}
-
-function handleSolution() {
-    let inputValue = document.getElementById("inputValue").value;
-    document.getElementById("solution").innerHTML = Add(inputValue);
 }

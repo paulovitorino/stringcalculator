@@ -19,11 +19,12 @@
                     placeholder='Type your string here.'
                     name='inputValue'
                     id='inputValue'
+                    onChange="blankSolution();"
                 />
                 <button type='button' onClick="handleSolution();">Add</button>
             <div>Solution</div>
             <div>
-                <p id="solution"></p>
+                <p id="solution"> </p>
             </div>
             </form>
         </div>

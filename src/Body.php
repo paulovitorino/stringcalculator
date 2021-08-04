@@ -1,9 +1,3 @@
-<script>
-//    function handleSolution() {
-//        document.getElementById("solution").innerHTML = "adicionou";
-//    }
-</script>
-
 <div>
     <aside>
         <strong>String Calculator</strong>

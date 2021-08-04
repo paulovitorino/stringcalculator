@@ -1,3 +1,13 @@
+function excludeLarger(array) {
+    for (var i = 0; i < array.length; i++) {
+        if (array[i] > 1000) {
+            array.splice(i, 1);
+            i--;
+        }
+    }
+    return array;
+}
+
 function checkForNegatives(array) {
     let negativeList = array.filter(function (value, index, arrayToBeFiltered) {
         return value < 0;
@@ -17,6 +27,7 @@ function sumString(stringValue, delimiter) {
     //As parseInt expects 2 arguments (string, radix) to convert to a number, I had to set radix = 10
     let intArray = array.map(element => parseInt(element, 10));
     checkForNegatives(intArray);
+    intArray = excludeLarger(intArray);
     return sumArray(intArray);
 }
 

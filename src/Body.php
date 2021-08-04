@@ -19,7 +19,7 @@
                     placeholder='Type your string here.'
                     name='inputValue'
                     id='inputValue'
-                    onChange="blankSolution();"
+                    onInput="blankSolution();"
                 />
                 <button type='button' onClick="handleSolution();">Add</button>
             <div>Solution</div>

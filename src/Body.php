@@ -23,7 +23,7 @@
                 <button type='button' onClick="handleSolution();">Add</button>
             <div>Solution</div>
             <div>
-                <p id="solution">teste</p>
+                <p id="solution"></p>
             </div>
             </form>
         </div>

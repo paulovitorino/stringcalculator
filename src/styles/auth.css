@@ -1,0 +1,78 @@
+#page-auth {
+    display: flex;
+    align-items: stretch;
+    height: 100vh;
+}
+
+#page-auth > aside {
+    flex: 6;
+    background: #fb7448;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px 80px;
+}
+
+#page-auth > aside > strong {
+    font: 700 36px 'Poppins', sans-serif;
+    line-height: 42px;
+}
+
+#page-auth > aside > p {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 16px;
+    color: #424242;
+}
+
+#page-auth > main {
+    flex: 9;
+    padding: 0px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    align-items: stretch;
+    text-align: center;
+}
+
+#logo{
+    align-self: center;
+}
+
+#formbox > textarea {
+    height: 150px;
+    border: 1px solid #fb7448;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    margin-top: 16px;
+    padding: 16px;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+}
+
+#formbox > textarea:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #fed3c5;
+    outline: 0;
+    -webkit-box-shadow: 0 0 0 3px rgb(251 116 72 / 25%);
+    box-shadow: 0 0 0 3px rgb(251 116 72 / 25%);
+}
+
+#formbox > button {
+    margin-top: 16px;
+}
+
+#formbox > button,input {
+    width: 100%;
+}

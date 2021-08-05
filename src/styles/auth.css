@@ -26,7 +26,11 @@
     color: #424242;
 }
 
-#page-auth > aside >.code-language {
+#page-auth > aside > p > a {
+    color: #495057;
+}
+
+#page-auth > aside >.code {
     font-size: 20px;
 }
 

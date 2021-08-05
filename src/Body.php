@@ -2,7 +2,8 @@
     <aside>
         <strong>String Calculator</strong>
         <p>A solution for 7Shifts Technical Interview by Paulo Vitorino.</p>
-        <p class="code-language">Made with Vanilla Javascript, PHP and CSS</p>
+        <p class="code">Made with Vanilla Javascript, PHP and CSS</p>
+        <p class="code">You may check Test Cases at <a href="https://github.com/paulovitorino/stringcalculator/blob/main/README.md" target="_blank">Readme.md</a> file.</p>
     </aside>
     <main>
         <div class="main-content">

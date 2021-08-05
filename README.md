@@ -16,7 +16,7 @@ A simple String calculator for Technical Interview at 7Shifts with a method: `in
 |TU01|Tested *question 1.b* (Empty strings return 0)|Press <kbd>**Add**</kbd> buttom|input=`void`|`0`|As Expected|Pass|
 |TU02|Tested comma separated strings|1. Enter input; 2.Press <kbd>**Add**</kbd>|input="2,66,7,4,6"|`85`|As Expected|Pass|
 |TU03|Tested *question 2* (new-line handling before and after delimiter(s))|1.Enter input; 2.Press <kbd>**Add**</kbd>|input="1`\n`,2,3,1,`\n`2,4"|`13`|As Expected|Pass|
-|TU04|Tested *question 3* (custom-delimiter `*` support)|1.Enter input; 2.Press <kbd>**Add**</kbd>|input="//*`\n`1*4*10*100"|`115`|As Expected|Pass|
+|TU04|Tested *question 3* (custom-delimiter `*` support)|1.Enter input; 2.Press <kbd>**Add**</kbd>|input="//\*`\n`1\*4\*10\*100"|`115`|As Expected|Pass|
 |TU05|Tested *question 3* (custom-delimiter `%` support)|1.Enter input; 2.Press <kbd>**Add**</kbd>|input="//%`\n`1%4%10%100%1000"|`1115`|As Expected|Pass|
 |TU06|Tested *question 4* (negative number exception throws listing the number(s) that caused the exception)|1.Enter input; 2.Press <kbd>**Add**</kbd>|input="//ç`\n`-1ç4ç-10ç-100ç1000"|`throw exception: “Negatives not allowed: -1,-10,-100”` and list the number(s) that caused the exception.|As Expected|Pass|
 |TU07|Tested *Bonus question 1* (Numbers larger than 1000 should be ignored)|1.Enter input; 2.Press <kbd>**Add**</kbd>|input="//>`\n`1>3>1001>2100>1000"|`1004`|As Expected|Pass|

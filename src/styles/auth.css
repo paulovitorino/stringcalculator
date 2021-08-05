@@ -53,7 +53,7 @@
     width: 100%;
     border-radius: 8px;
     margin-bottom: 16px;
-    margin-top: 16px;
+    margin-top: 32px;
     padding: 16px;
     color: #495057;
     background-color: #fff;
@@ -71,8 +71,70 @@
 
 #formbox > button {
     margin-top: 16px;
+    padding: 16px;
+    display: inline-block;
+    white-space: pre-wrap;
+    width: 100%;
+    padding-left: 96px!important;
+    padding-right: 96px!important;
+    background-color: #fb7448;
+    border-color: #fb7448;
+    font-weight: 800;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    font-size: 16px;
+    line-height: 1.6;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: filter 0.2s;
 }
 
-#formbox > button,input {
-    width: 100%;
+#formbox > button:hover {
+    filter: brightness(0.9);
+}
+
+#formbox > button:active {
+    filter: brightness(0.5);
+}
+.text-white {
+    color: #fff!important;
+}
+
+.separator {
+    color: #495057;
+    margin: 32px 0;
+    display: flex;
+    align-items: center;
+}
+
+.separator::before {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #495057;
+    margin-right: 16px;
+}
+
+.separator::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #495057;
+    margin-left: 16px;
+}
+
+#solutionbox {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 42px;
+    transition-duration: 0.5s;
+}
+
+#solution {
+    font: 700 36px 'Poppins', sans-serif;
+    line-height: 42px;
+    color: #495057;
 }

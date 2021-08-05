@@ -13,12 +13,10 @@
                         name='inputValue'
                         id='inputValue'
                         onInput="blankSolution();"></textarea>
-                    <button type='button' onClick="handleSolution();">Add</button>
+                    <button class="text-white" type='button' onClick="handleSolution();">Add</button>
+                    <div class="separator">Solution</div>
                     <div id="solutionbox">
-                        <div class="separator">Solution</div>
-                        <div>
-                            <p id="solution"> </p>
-                        </div>
+                        <p id="solution"> </p>
                     </div>
                 </form>
         </div>

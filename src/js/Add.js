@@ -1,7 +1,3 @@
-//function splitAndJoin(array, delimiter) {
-//    return array.split(delimiter).join(',');
-//}
-
 function excludeLarger(array) {
     for (var i = 0; i < array.length; i++) {
         if (array[i] > 1000) {
@@ -27,11 +23,9 @@ function sumArray(array) {
 }
 
 function sumString(stringValue, delimiter) {
-    //    const array = stringValue.split(delimiter);
     for (var i = 0; i < delimiter.length; i++) {
         stringValue = stringValue.replaceAll(delimiter[i], ',');
     }
-    //    const array = delimiter.map(element => splitAndJoin(element, stringValue));
     const array = stringValue.split(',');
     //As parseInt expects 2 arguments (string, radix) to convert to a number, I had to set radix = 10
     let intArray = array.map(element => parseInt(element, 10));
@@ -41,13 +35,13 @@ function sumString(stringValue, delimiter) {
 }
 
 function Add(inputValue) {
+    console.log(inputValue);
     if (inputValue) {
         let delimiter = [','];
-        let brokenArray = inputValue.split('\\n');
+        let brokenArray = inputValue.split('\n');
         if (brokenArray[0].startsWith('//')) {
             let delimiterString = brokenArray[0].replace('//', '');
             delimiter = delimiterString.split(',');
-            //            delimiter.push(',');
             brokenArray[0] = '';
         }
         inputValue = brokenArray.join('');

@@ -8,14 +8,17 @@
         <div>
             <img src="./src/assets/images/logo.svg" alt="7Shifts Logo" />
             <form onSubmit="event.preventDefault(); handleSolution();">
-                <input
-                    type='text'
-                    placeholder='Type your string here.'
-                    name='inputValue'
-                    id='inputValue'
-                    onInput="blankSolution();"
-                />
-                <button type='button' onClick="handleSolution();">Add</button>
+                <div>
+                    <textarea
+                        placeholder='Type your string here.'
+                        name='inputValue'
+                        id='inputValue'
+                        onInput="blankSolution();"
+                    ></textarea>
+                </div>
+                <div>
+                    <button type='button' onClick="handleSolution();">Add</button>
+                </div>
             <div>Solution</div>
             <div>
                 <p id="solution"> </p>

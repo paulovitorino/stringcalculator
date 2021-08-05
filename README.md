@@ -22,4 +22,4 @@ A simple String calculator for Technical Interview at 7Shifts with a method: `in
 |TU07|Tested *Bonus question 1* (Numbers larger than 1000 should be ignored)|1.Enter input; 2.Press <kbd>**Add**</kbd>|input="//>`\n`1>3>1001>2100>1000"|`1004`|As Expected|Pass|
 |TU08|Tested *Bonus question 2* (Delimiters can be arbitrary length)|1.Enter input; 2.Press <kbd>**Add**</kbd>|input="//&&&&`\n`1&&&&3&&&&201&&&&102&&&&1000"|`1307`|As Expected|Pass|
 |TU09|Tested *Bonus question 3* (Allow for multiple delimiters)|1.Enter input; 2.Press <kbd>**Add**</kbd>|input="//&,$,@,#`\n`1@3&201$102#400"|`707`|As Expected|Pass|
-|TU10|Tested *Bonus question 4* (Combine test cases **TU08** and **TU09**)|1.Enter input; 2.Press <kbd>**Add**</kbd>|input="//&&,$,@%!,***`\n`1@%!3&&301$202***500"|`1007`|As Expected|Pass|
+|TU10|Tested *Bonus question 4* (Combine test cases **TU08** and **TU09**)|1.Enter input; 2.Press <kbd>**Add**</kbd>|input="//&&,$,@%!,\*\*\*`\n`1@%!3&&301$202\*\*\*500"|`1007`|As Expected|Pass|

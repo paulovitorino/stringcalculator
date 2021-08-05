@@ -35,7 +35,6 @@ function sumString(stringValue, delimiter) {
 }
 
 function Add(inputValue) {
-    console.log(inputValue);
     if (inputValue) {
         let delimiter = [','];
         let brokenArray = inputValue.split('\n');

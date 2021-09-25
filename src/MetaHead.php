@@ -1,8 +1,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<link rel="stylesheet" href="./src/styles/global.css?v=<?=filemtime('./src/styles/global.css');?>">
-<link rel="stylesheet" href="./src/styles/auth.css?v=<?=filemtime('./src/styles/auth.css');?>">
+<link rel="stylesheet" href="./src/styles/global.css?v=<?php echo filemtime('./src/styles/global.css');?>">
+<link rel="stylesheet" href="./src/styles/auth.css?v=<?php echo filemtime('./src/styles/auth.css');?>">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,8 +27,8 @@ rel="stylesheet">
 <meta name="msapplication-TileImage" content="./src/favicon/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
-<script src="./src/js/styleFunctions.js?v=<?=filemtime('./src/js/styleFunctions.js');?>" type="text/javascript"></script>
-<script src="./src/js/basicFunctions.js?v=<?=filemtime('./src/js/basicFunctions.js');?>" type="text/javascript"></script>
-<script src="./src/js/Add.js?v=<?=filemtime('./src/js/Add.js');?>" type="text/javascript"></script>
+<script src="./src/js/styleFunctions.js?v=<?php echo filemtime('./src/js/styleFunctions.js');?>" type="text/javascript"></script>
+<script src="./src/js/basicFunctions.js?v=<?php echo filemtime('./src/js/basicFunctions.js');?>" type="text/javascript"></script>
+<script src="./src/js/Add.js?v=<?php echo filemtime('./src/js/Add.js');?>" type="text/javascript"></script>
 
 <title>String Calculator</title>
